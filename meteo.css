@@ -1,0 +1,20 @@
+header{ background-color: black;
+ }
+
+
+ header h1{color: white;
+ 			font-family: Arial,sans-serif;
+			font-style: italic;
+ 			text-align: center;
+  }
+
+ .couleur{background-color: #D3D3D3;
+ 		background-size: 200px;
+		 
+}
+
+.box {display: flex;
+   	  flex-flow: row wrap;
+   	  justify-content: space-around;
+      }
+
