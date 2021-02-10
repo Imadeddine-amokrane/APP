@@ -1,20 +1,49 @@
-header{ background-color: black;
- }
+/*header{ background-color: rgba(0,0,0,0.2);
+ }*/
 
 
- header h1{color: white;
+ header h1{color: black;
  			font-family: Arial,sans-serif;
 			font-style: italic;
  			text-align: center;
   }
 
- .couleur{background-color: #D3D3D3;
- 		background-size: 200px;
-		 
+body {background-image: url('sky.jpg');
+ 		background-size: cover;
+ 		background-position: top center;
+
+
+
 }
+
+select {
+		width: 100%;
+		max-width: 350px;
+		padding: 15px 15px;
+		border: none;
+		outline: none;
+		background-color: rgba(255,255,255,0.85);
+		border-radius: 16px 0px 16px 0px;
+		border-bottom: 3px solid blue;
+		color: #313131;
+		font-size: 20px;
+		font-weight: 300;
+		transition: 0.2s ease-out;
+		
+
+}
+ .city{
+ 		background-color: rgba(255,255,255,0.3);
+ 		align-content: center;
+ 		width: 200px;
+}
+		 
+
 
 .box {display: flex;
    	  flex-flow: row wrap;
    	  justify-content: space-around;
+   	  align-items: center;
+   	  text-align: center;
       }
 

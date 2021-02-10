@@ -5,62 +5,63 @@
 	  <meta charset="UTF-8" />
 	</head>
 	<link rel="stylesheet" type="text/css" href="meteo.css">
-	<script language="javascript" type="text/javascript" charset="utf-8">
-		let villecourante="Paris"
-		function showCity() {
-			
-			 // console.log(villecourante)
-			 alert(villecourante); }
+	<script language="javascript" type="text/javascript" src="meteo.js" charset="utf-8">
 	</script>
-<!-- function Message() {
-       var msg="Message sur la ligne 1.nMessage sur la ligne 2.n...";
-       console.log(msg)
-       alert(msg);
-   } -->
-
-
-	<body onload="showCity()">
+	<body>
 	  <header>
-	  	<h1>TP meteo HTML</h1>
+	  	<h1>Météo</h1>
 	  </header>
-	 <div class="box">
-	  <section id="Paris">
-	  	<div class="couleur">
+			<select id="choisirville" onchange=showCity() >
+			    <option value="">--Merci de choisir une ville--</option>
+			    <option value="Paris">Paris</option>
+			    <option value="Alger">Alger</option>
+			    <option value="Londres">Londres</option>
+			    <option value="Montreal">Montreal</option>
+			    <option value="Melbourne">Melbourne</option>
+			</select>
+	 <div class="box" >
+	  <section id="Paris" class="city" >
+	  	<div >
 	  	<h2>Paris</h2>
-	  	<p>10°C Pluvieux </p>
-	  	<img src="Pluie.png" alt="Pluie" width="120">
-	  </div>
+	  	<p >10°C</p>
+	  	<img src="Pluie.png" alt="Pluie" width="120" >
+	  	<p> Pluvieux </p>
+	  	</div>
 	  </section>
 
-	<section id="Alger">
-		<div class="couleur">
+	<section id="Alger" class="city">
+		<div >
 	  	<h2>Alger</h2>
-	  	<p>10°C Nuageux </p>
+	  	<p>10°C</p>
 	  	<img src="Nuage.png" alt="Nuages" width="120">
+	  	<p> Nuageux </p>
 	  	</div>
 	 </section>
 
-	<section id="Londres">
-		<div class="couleur">
+	<section id="Londres" class="city" >
+		<div >
 	  	<h2>Londres</h2>
-	  	<p>5°C Brumeux </p>
+	  	<p>5°C</p>
 	  	<img src="Brouillard.png" alt="Nuages" width="120">
+	  	<p> Brumeux</p>
 	  </div>
 	 </section>
 	
-	<section id="Montreal">
-		<div class="couleur">
+	<section id="Montreal" class="city">
+		<div >
 		<h2>Montreal</h2>
-		<p>-9°C Neigeux </p>
-		<img src="Snowy.png" alt="Nuages" width="120">
+		<p>-9°C </p>
+		<img src="Snowy.png" alt="Neige" width="120">
+		<p>Neigeux</p>
 		</div>
 		</section>
 
-	<section id="Melbourne">
-		<div class="couleur">
+	<section id="Melbourne" class="city">
+		<div >
 	  	<h2>Melbourne</h2>
-	  	<p>25°C Ensoleillé </p>
-	  	<img src="Sunny.png" alt="Nuages" width="120">
+	  	<p>25°C</p>
+	  	<img src="Sunny.png" alt="Soleil" width="120">
+	  	<p>Ensoleillé</p>
 	  </div>
 	 </section>
 	 </div>
@@ -68,7 +69,7 @@
 
 
 	<footer>
-		<p>Imadeddine AMOKRANE & Nourhen KISSARLI <br><a href="https://thenounproject.com/">Noun project</a></p>
+		<p>Imadeddine AMOKRANE & Nourhen KISSARLI <br>Icones par :<a href="https://thenounproject.com/">Noun project</a></p>
 	</footer>
 	</body>
 </html>
